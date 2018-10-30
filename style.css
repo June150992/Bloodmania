@@ -1,3 +1,95 @@
+:root {
+    font-size: 2vw;
+}
+
+body {
+    margin: 0;
+}
+
+#screen {
+  width: 100vw;
+  height: 56.25vw;
+  background-color: green;
+
+  overflow: hidden;
+  position: relative;
+
+/* touch-action: none; */
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+
+}
+
+/* effekter */
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.blur {
+  filter:blur(5px) brightness(80%);
+}
+
+.fade_out {
+  animation-name: fadeout_kf;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+  0% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+#start {
+  position: absolute;
+  width: 100vw;
+  height: 56.25vw;
+  background-image: url(start.svg);
+  background-size: 100%;
+  background-color: rgba(240, 248, 255, 0.75);
+}
+
+#play {
+  position: absolute;
+  width: 20vw;
+  height: 10vw;
+  background-image: url(play.svg);
+  background-size: 100%;
+  left: 33vw;
+  top: 42vw;
+
+  cursor: pointer;
+}
+
 #game {
     position: relative;
     width: 100%;
@@ -6,6 +98,7 @@
 }
 
 #game_background {
+
     position: absolute;
     background-image: url('assets/gamescreen.png');
     background-repeat: no-repeat;
@@ -23,6 +116,7 @@
 }
 
 #vampire {
+
     position: absolute;
     background-image: url(assets/vampire.svg);
     background-repeat: no-repeat;
@@ -34,6 +128,7 @@
 }
 
 #witch {
+
     position: absolute;
     background-image: url(assets/witch.svg);
     background-repeat: no-repeat;
@@ -44,23 +139,25 @@
     background-size: 100%;
 }
 #bloodmeter {
+
     position: absolute;
     background-image: url(assets/bloodmeternew.svg);
     background-repeat: no-repeat;
     height: 32vw;
     width: 20vw;
     top: 5vw;
-    left: 80vw;
+    left: 84vw;
     background-size: 100%;
 }
 #bloodpoints {
+
     position: absolute;
     background-image: url(assets/bloodpointsnew.svg);
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
-    top: 36vw;
-    left: 66vw;
+    top: 39vw;
+    left: 69vw;
     background-size: 100%;
 
 
@@ -69,6 +166,7 @@
 
 
 #cat {
+
    position: absolute;
     background-image: url(assets/cat.svg);
     background-repeat: no-repeat;
@@ -80,6 +178,7 @@
 }
 
 #bat_1 {
+
     position: absolute;
     background-image: url(assets/bat_1.svg);
     background-repeat: no-repeat;
@@ -91,6 +190,7 @@
 }
 
 #bat_2 {
+
    position: absolute;
     background-image: url(assets/bat_2.svg);
     background-repeat: no-repeat;
@@ -102,6 +202,7 @@
 
 }
 #bat_3 {
+
     position: absolute;
     background-image: url(assets/bat_3.svg);
     background-repeat: no-repeat;
@@ -120,8 +221,6 @@
     height: 100vw;
     width: 100vw;
 }
-
-
 
 #settings {
     display: none;
