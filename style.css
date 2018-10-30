@@ -1,0 +1,139 @@
+#game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+}
+
+#game_background {
+    position: absolute;
+    background-image: url('assets/gamescreen.png');
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#game_ui {
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+
+}
+
+#vampire {
+    position: absolute;
+    background-image: url(assets/vampire.svg);
+    background-repeat: no-repeat;
+    height: 38vw;
+    width: 20vw;
+    top: 20vw;
+    left: 10vw;
+}
+
+#witch {
+    position: absolute;
+    background-image: url(assets/witch.svg);
+    background-repeat: no-repeat;
+    height: 38vw;
+    width: 20vw;
+    top: 20vw;
+    left: 40vw;
+}
+
+#bloodpoints {
+    position: absolute;
+    background-image: url(assets/bloodpoints.png);
+    background-repeat: no-repeat;
+    height: 27vw;
+    width: 61vw;
+    top: 33vw;
+    left: 51vw;
+
+}
+
+#bloodmeter {
+    position: absolute;
+    background-image: url(assets/bloodmeter.png);
+    background-repeat: no-repeat;
+    height: 66vw;
+    width: 13vw;
+    top: 3vw;
+    left: 75vw;
+
+}
+
+#cat {
+   position: absolute;
+    background-image: url(assets/cat.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 20vw;
+    left: 23vw;
+}
+
+#bat_1 {
+    position: absolute;
+    background-image: url(assets/bat_1.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 5vw;
+    left: 10vw;
+}
+
+#bat_2 {
+   position: absolute;
+    background-image: url(assets/bat_2.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 5vw;
+    left: 58vw;
+}
+#bat_3 {
+    position: absolute;
+    background-image: url(assets/bat_3.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 2vw;
+    left: 46vw;
+}
+
+
+#start {
+    display: none;
+    background-image: url('assets/Titlescreen.png');
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+}
+
+
+
+#settings {
+    display: none;
+    background-image: url('assets/settingssk%C3%A6rm.png');
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+}
+
+#gameover {
+    display: none;
+    background-image: url(assets/game%20over.png);
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+}
+
+#levelcomplete {
+    display: none;
+    background-image: url('assets/Victory.png');
+    background-repeat: no-repeat;
+    height: 100vw;
+    width: 100vw;
+}
+
+
