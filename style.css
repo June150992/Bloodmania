@@ -11,12 +11,14 @@
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    background-size: 100%;
 }
 
 #game_ui {
     position: relative;
     height: 100vw;
     width: 100vw;
+    background-size: 100%;
 
 }
 
@@ -26,8 +28,9 @@
     background-repeat: no-repeat;
     height: 38vw;
     width: 20vw;
-    top: 20vw;
+    top: 12vw;
     left: 10vw;
+    background-size: 100%;
 }
 
 #witch {
@@ -36,31 +39,34 @@
     background-repeat: no-repeat;
     height: 38vw;
     width: 20vw;
-    top: 20vw;
+    top: 12vw;
     left: 40vw;
+    background-size: 100%;
 }
-
-#bloodpoints {
-    position: absolute;
-    background-image: url(assets/bloodpoints.png);
-    background-repeat: no-repeat;
-    height: 27vw;
-    width: 61vw;
-    top: 33vw;
-    left: 51vw;
-
-}
-
 #bloodmeter {
     position: absolute;
-    background-image: url(assets/bloodmeter.png);
+    background-image: url(assets/bloodmeternew.svg);
     background-repeat: no-repeat;
-    height: 66vw;
-    width: 13vw;
-    top: 3vw;
-    left: 75vw;
+    height: 32vw;
+    width: 20vw;
+    top: 5vw;
+    left: 80vw;
+    background-size: 100%;
+}
+#bloodpoints {
+    position: absolute;
+    background-image: url(assets/bloodpointsnew.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 36vw;
+    left: 66vw;
+    background-size: 100%;
+
 
 }
+
+
 
 #cat {
    position: absolute;
@@ -69,7 +75,8 @@
     height: 20vw;
     width: 30vw;
     top: 20vw;
-    left: 23vw;
+    left: 20vw;
+    background-size: 100%;
 }
 
 #bat_1 {
@@ -78,8 +85,9 @@
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
-    top: 5vw;
+    top: 0vw;
     left: 10vw;
+    background-size: 100%;
 }
 
 #bat_2 {
@@ -88,8 +96,10 @@
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
-    top: 5vw;
+    top: -3vw;
     left: 58vw;
+    background-size: 100%;
+
 }
 #bat_3 {
     position: absolute;
@@ -97,8 +107,9 @@
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
-    top: 2vw;
+    top: -5vw;
     left: 46vw;
+    background-size: 100%;
 }
 
 
