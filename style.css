@@ -1,26 +1,3 @@
-:root {
-    font-size: 2vw;
-}
-
-body {
-    margin: 0;
-}
-
-#screen {
-  width: 100vw;
-  height: 56.25vw;
-  background-color: green;
-
-  overflow: hidden;
-  position: relative;
-
-/* touch-action: none; */
--moz-user-select: none;
--webkit-user-select: none;
-user-select: none;
-
-}
-
 /* effekter */
 .hide {
     visibility: hidden;
@@ -31,65 +8,154 @@ user-select: none;
 }
 
 .blur {
-  filter:blur(5px) brightness(80%);
+    filter: blur(5px) brightness(80%);
 }
 
 .fade_out {
-  animation-name: fadeout_kf;
-  animation-duration: .5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeout_kf {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
+body {
+    margin: 0;
+}
+#clouds {
+    position: absolute;
+    background-image: url(assets/clouds.svg);
+    background-repeat: no-repeat;
+    height: 30vw;
+    width: 20vw;
+    top: -1vw;
+    left: 20vw;
+    background-size: 100%;
+    z-index: 10;
+    opacity: 0,5;
+}
+
+.skyflyver {
+    animation-name: skyflyver;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+@keyframes skyflyver {
+    from {
+        left: -30vw;
+    }
+    to {
+        left: 100vw;
+    }
+}
 .pulse {
-  animation-name: pulse_kf;
-  animation-duration: 1.7s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in;
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
 }
 
 
 @keyframes pulse_kf {
-  0% {
-    transform: scale(0.97);
-  }
-  100% {
-    transform: scale(1);
-  }
+    0% {
+        transform: scale(0.97);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 
 #start {
   position: absolute;
   width: 100vw;
-  height: 56.25vw;
-  background-image: url(start.svg);
+  height: 100vw;
+  background-image: url('assets/Titlescreen%20clean.png');
   background-size: 100%;
-  background-color: rgba(240, 248, 255, 0.75);
+  background-repeat: no-repeat;
+  top: 0vw;
+  left: 0vw;
 }
 
 #play {
   position: absolute;
-  width: 20vw;
-  height: 10vw;
-  background-image: url(play.svg);
+  width: 7vw;
+  height: 7vw;
+  background-image: url('assets/playknap.svg');
   background-size: 100%;
-  left: 33vw;
-  top: 42vw;
-
+  background-repeat: no-repeat;
+  left: 44vw;
+  top: 25vw;
   cursor: pointer;
+  z-index: 10;
+}
+#settingsknap {
+  position: absolute;
+  width: 17vw;
+  height: 19vw;
+  background-image: url('assets/settingskanap.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 45vw;
+  top: 25vw;
+  cursor: pointer;
+  z-index: 5;
+}
+.bat_1_title {
+
+}
+.bat_2_title {
+
 }
 
+.bat_3_title {
+
+}
+.vampire_title {
+    position: absolute;
+    background-image: url(assets/vampire.svg);
+    background-repeat: no-repeat;
+    height: 38vw;
+    width: 20vw;
+    top: 22vw;
+    left: 22vw;
+    background-size: 100%;
+}
+.witch_title {
+    position: absolute;
+    background-image: url(assets/witch.svg);
+    background-repeat: no-repeat;
+    height: 38vw;
+    width: 20vw;
+    top: 20vw;
+    left: 60vw;
+    background-size: 100%;
+}
+
+.cat_title {
+    position: absolute;
+    background-image: url(assets/cat.svg);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
+    top: 25vw;
+    left: 0vw;
+    background-size: 100%;
+}
 #game {
     position: relative;
     width: 100%;
@@ -108,26 +174,26 @@ user-select: none;
 }
 
 #game_ui {
-    position: relative;
+
     height: 100vw;
     width: 100vw;
     background-size: 100%;
 
 }
 
-#vampire {
+#game_elements .vampire_game {
 
     position: absolute;
     background-image: url(assets/vampire.svg);
     background-repeat: no-repeat;
     height: 38vw;
     width: 20vw;
-    top: 12vw;
+    top: 17vw;
     left: 10vw;
     background-size: 100%;
 }
 
-#witch {
+#game_elements .witch_game {
 
     position: absolute;
     background-image: url(assets/witch.svg);
@@ -138,15 +204,16 @@ user-select: none;
     left: 40vw;
     background-size: 100%;
 }
+
 #bloodmeter {
 
     position: absolute;
     background-image: url(assets/bloodmeternew.svg);
     background-repeat: no-repeat;
     height: 32vw;
-    width: 20vw;
+    width: 18vw;
     top: 5vw;
-    left: 84vw;
+    left: 83vw;
     background-size: 100%;
 }
 #bloodpoints {
@@ -156,16 +223,14 @@ user-select: none;
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
-    top: 39vw;
-    left: 69vw;
+    top: 37vw;
+    left: 67vw;
     background-size: 100%;
 
 
 }
 
-
-
-#cat {
+.cat_game {
 
    position: absolute;
     background-image: url(assets/cat.svg);
@@ -213,18 +278,9 @@ user-select: none;
     background-size: 100%;
 }
 
-
-#start {
-    display: none;
-    background-image: url('assets/Titlescreen.png');
-    background-repeat: no-repeat;
-    height: 100vw;
-    width: 100vw;
-}
-
 #settings {
     display: none;
-    background-image: url('assets/settingssk%C3%A6rm.png');
+    background-image: url('assets/settings.svg');
     background-repeat: no-repeat;
     height: 100vw;
     width: 100vw;
